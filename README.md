@@ -36,6 +36,13 @@ GROUP BY по customer_id. В этом случае можно убрать и d
 
 ![img](https://github.com/RepinAndrey/index/blob/main/img/4.png)
 
+###Дополнение
+
+Добавлен индекс на payment_date.
+Переписал условие where для payment_date следующим образом: payment_date >= ‘2005-07-30’ and payment_date < DATE_ADD(‘2005-07-30’, INTERVAL 1 DAY)
+
+![img](https://github.com/RepinAndrey/index/blob/main/img/7.png)
+
 ### Задание 3
 
 Самостоятельно изучите, какие типы индексов используются в PostgreSQL. Перечислите те индексы, которые используются в PostgreSQL, а в MySQL — нет.
